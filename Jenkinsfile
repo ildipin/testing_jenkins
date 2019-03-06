@@ -23,7 +23,7 @@ pipeline{
       }
     }
     stage('Deploy') {
-      
+
             when {
               expression {
                 true
