@@ -13,9 +13,7 @@ pipeline{
         sh 'java HelloWorld'
         }
       }
-      timeout(time:5, unit:'SECONDS') {
-    input message:'Approve deployment?', submitter: 'it-ops'
-    }
+  
     stage(" deploying"){
 
       steps{
