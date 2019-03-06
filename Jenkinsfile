@@ -9,8 +9,8 @@ pipeline{
       }
     stage("Building my java program"){
       steps{
-        javac HelloWorld.java
-        java HelloWorld
+        sh javac HelloWorld.java
+        sh java HelloWorld
       }
 
 
