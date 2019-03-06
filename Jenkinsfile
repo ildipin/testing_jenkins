@@ -13,7 +13,7 @@ pipeline{
         sh 'java HelloWorld'
         }
       }
-  
+
     stage(" deploying"){
 
       steps{
@@ -30,6 +30,7 @@ pipeline{
             }
             steps {
                 echo "this is build number ${env.BUILD_ID}"
+                sh "./script.sh"
 
             }
         }
