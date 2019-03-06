@@ -17,6 +17,16 @@ pipeline{
       steps{
 
         echo 'last and least'
+        stage('Deploy') {
+            when {
+              expression {
+                currentBuild.result == 'SUCCESS'
+              }
+            }
+            steps {
+                sh 'all good'
+            }
+        }
       }
     }
   }
