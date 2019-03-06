@@ -13,10 +13,11 @@ pipeline{
         sh 'java HelloWorld'
         }
       }
-    stage(" deploying"){
       timeout(time:5, unit:'SECONDS') {
     input message:'Approve deployment?', submitter: 'it-ops'
-}
+    }
+    stage(" deploying"){
+
       steps{
 
         echo 'last and least'
@@ -31,7 +32,7 @@ pipeline{
             }
             steps {
                 echo "this is build number ${env.BUILD_ID}"
-                
+
             }
         }
 
