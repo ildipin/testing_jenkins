@@ -7,6 +7,14 @@ pipeline{
     echo "does this work"
       }
       }
+    stage("Building my java program"){
+      steps{
+        sh javac HelloWorld.java
+        java HelloWorld
+      }
+
+
+    }
 
   }
 
