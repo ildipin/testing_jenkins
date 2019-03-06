@@ -27,7 +27,7 @@ pipeline{
               }
             }
             steps {
-                echo BUILD_ID
+                echo "this is build number ${env.BUILD_ID}"
             }
         }
   }
