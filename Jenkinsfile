@@ -17,18 +17,19 @@ pipeline{
       steps{
 
         echo 'last and least'
-        stage('Deploy') {
+
+      }
+    }
+    stage('Deploy') {
             when {
               expression {
-                currentBuild.result == 'SUCCESS'
+                currentBuild.result == null || currentBuild.result == 'SUCCESS'
               }
             }
             steps {
-                sh 'all good'
+                sh 'make publish'
             }
         }
-      }
-    }
   }
 
 }
