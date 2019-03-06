@@ -27,7 +27,7 @@ pipeline{
               }
             }
             steps {
-                echo "all good"
+                echo BUILD_ID
             }
         }
   }
