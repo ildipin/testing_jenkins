@@ -18,8 +18,7 @@ pipeline{
 
       steps{
 
-        echo 'last and least'echo "nice world"
-        echo "script working"
+        echo 'last and least'
 
       }
     }
