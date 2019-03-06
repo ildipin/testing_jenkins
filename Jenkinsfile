@@ -11,11 +11,14 @@ pipeline{
       steps{
         sh 'javac HelloWorld.java'
         sh 'java HelloWorld'
+        }
       }
+    stage(" deploying"){
+      steps{
 
-
+        echo 'last and least'
+      }
     }
-
   }
 
 }
