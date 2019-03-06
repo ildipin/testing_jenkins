@@ -14,6 +14,9 @@ pipeline{
         }
       }
     stage(" deploying"){
+      timeout(time:5, unit:'SECONDS') {
+    input message:'Approve deployment?', submitter: 'it-ops'
+}
       steps{
 
         echo 'last and least'
