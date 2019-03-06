@@ -1,1 +1,1 @@
-echo "nice world"
+echo "script working"
