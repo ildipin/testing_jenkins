@@ -16,7 +16,7 @@ pipeline{
     stage(" deploying"){
       steps{
 
-        echo 'last and '
+        echo 'last and least'
       }
     }
   }
