@@ -23,7 +23,7 @@ pipeline{
       }
     }
     stage('Deploy') {
-      def  man = "john"
+      
             when {
               expression {
                 true
@@ -32,7 +32,7 @@ pipeline{
             steps {
                 echo "this is build number ${env.BUILD_ID}"
                 sh "./script.sh"
-                echo "man name is${man}"
+
             }
         }
 
