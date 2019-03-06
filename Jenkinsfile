@@ -7,6 +7,7 @@ pipeline{
     stage('Greeting'){
       steps{
     echo "hello from jenkins"
+    echo "does this work"
       }
       }
 
