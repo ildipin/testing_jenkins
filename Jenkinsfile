@@ -1,3 +1,6 @@
+ #!/usr/bin/env groovy
+
+
 pipeline{
   agent any
   stages{
@@ -6,7 +9,7 @@ pipeline{
     echo "hello from jenkins"
       }
       }
-  
+
   }
 
 }
