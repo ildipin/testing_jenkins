@@ -28,9 +28,10 @@ pipeline{
             }
             steps {
                 echo "this is build number ${env.BUILD_ID}"
+                sh 'groovy tes.groovy'
             }
         }
-        
+
   }
 
 }
