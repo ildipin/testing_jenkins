@@ -19,7 +19,7 @@ pipeline{
 
       steps{
 
-        echo 'last and least or not ${mystrin}'
+        echo "last and least or not ${mystrin}"
 
       }
     }
